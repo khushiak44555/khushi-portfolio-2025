@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+    --font-gb: "Gilroy-Bold", sans-serif;
+    --font-gm: "Gilroy-Medium", sans-serif;
+    --font-gr: "Gilroy-Regular", sans-serif;
+    --font-rm: "RoxboroughCF-Medium", sans-serif;
+  }
+@font-face {
+    font-family: "Gilroy-Bold";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/src/assets/fonts/Gilroy-Bold.ttf") format("truetype");
+  
+  }
+  @font-face {
+    font-family: "Gilroy-Medium";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/src/assets/fonts/Gilroy-Medium.ttf") format("truetype");
+  
+  }
+  @font-face {
+    font-family: "Gilroy-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/src/assets/fonts/Gilroy-Regular.ttf") format("truetype");
+  
+  }
+   @font-face {
+    font-family: "RoxboroughCF-Medium";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/src/assets/fonts/RoxboroughCF-Medium.otf") format("opentype");
+  
+  }
+
+  /* Add this to your index.css or App.css */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #FFF; /* fallback for track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFF;
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #000 #787878;
+}
+
+/* Enlarge cursor when hovering on target */
+body.cursor-hover #custom-cursor {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+#scroll-container {
+  min-height: 100vh;
+  height: auto;
+}
+
+/* Work Showcase Slider Styles */
+.work-showcase-slider .swiper-button-next,
+.work-showcase-slider .swiper-button-prev {
+    color: white;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    margin: 0 40px;
+}
+
+/* Responsive: Reduce margin on small screens */
+@media (max-width: 768px) {
+    .work-showcase-slider .swiper-button-next,
+    .work-showcase-slider .swiper-button-prev {
+        margin: 0 5px;
+    }
+}
+
+.work-showcase-slider .swiper-slide {
+    opacity: 0 !important;
+    transition: opacity 1s;
+}
+
+.work-showcase-slider .swiper-slide-active {
+    opacity: 1 !important;
+}
+.loader-char {
+    display: inline-block;
+    transition: color 0.3s ease;
+}

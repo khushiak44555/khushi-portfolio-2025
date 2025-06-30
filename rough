@@ -1,0 +1,91 @@
+// You can move this to a separate file and import if you want
+const projectsData = [
+    // Web Projects
+    {
+        id: "collage-diaries",
+        title: "Collage Diaries",
+        description: "A front-end project showcasing interactive student portfolios and diaries.",
+        year: "2024",
+        image: "/p1.jpg",
+        tags: ["HTML", "CSS", "JavaScript", "Frontend"],
+        type: "web",
+        content: (
+            <>
+                <p>
+                    <b>About:</b> Collage Diaries is a modern web app for students to create, share, and manage their academic journeys. It features a clean UI, responsive design, and interactive diary entries.
+                </p>
+                <ul className="list-disc ml-6 mt-4 text-[#9D9D9D]">
+                    <li>Built with React and Tailwind CSS</li>
+                    <li>Student authentication and profile management</li>
+                    <li>Rich text editor for diary entries</li>
+                    <li>Mobile-first, accessible design</li>
+                </ul>
+            </>
+        )
+    },
+    {
+        id: "beyond-water",
+        title: "Beyond Water",
+        description: "A responsive front-end website focused on water sustainability awareness.",
+        year: "2024",
+        image: "/p1.jpg",
+        tags: ["Frontend", "React.js", "Design"],
+        type: "web",
+        content: (
+            <>
+                <p>
+                    <b>About:</b> Beyond Water is an awareness platform with interactive infographics, blog posts, and a donation portal for water sustainability.
+                </p>
+                <ul className="list-disc ml-6 mt-4 text-[#9D9D9D]">
+                    <li>Custom illustrations and SVG animations</li>
+                    <li>SEO optimized and fast loading</li>
+                    <li>Integrated with payment gateway for donations</li>
+                </ul>
+            </>
+        )
+    },
+    // ML Projects
+    {
+        id: "episcan",
+        title: "Cancer Detection (EpiScan)",
+        description: "Machine learning model for early cancer detection using data modeling techniques.",
+        year: "2024",
+        image: "/p1.jpg",
+        tags: ["Machine Learning", "Data Modeling", "Python", "AI"],
+        type: "ml",
+        content: (
+            <>
+                <p>
+                    <b>About:</b> EpiScan leverages advanced ML algorithms to analyze medical data and predict early signs of cancer with high accuracy.
+                </p>
+                <ul className="list-disc ml-6 mt-4 text-[#9D9D9D]">
+                    <li>Python, scikit-learn, pandas</li>
+                    <li>Data visualization and reporting</li>
+                    <li>Model accuracy: 94%</li>
+                </ul>
+            </>
+        )
+    },
+    {
+        id: "medical-record",
+        title: "Medical Record System",
+        description: "A Java-based system for secure patient record management and access.",
+        year: "2023",
+        image: "/p1.jpg",
+        tags: ["Java", "OOP", "File Handling"],
+        type: "ml",
+        content: (
+            <>
+                <p>
+                    <b>About:</b> A desktop application for hospitals to manage patient records securely, with role-based access and audit trails.
+                </p>
+                <ul className="list-disc ml-6 mt-4 text-[#9D9D9D]">
+                    <li>Java Swing UI</li>
+                    <li>File encryption for sensitive data</li>
+                    <li>Export and import patient data</li>
+                </ul>
+            </>
+        )
+    },
+    // Add more projects as needed...
+];
