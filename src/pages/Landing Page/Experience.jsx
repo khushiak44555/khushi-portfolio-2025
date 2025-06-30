@@ -58,7 +58,7 @@ const Experience = () => {
             Experience
           </h2>
           <a
-            href="/Khushi Resume 2025 Ui Ux.pdf"
+            href="/Khushi Resume 2025 June.pdf"
             download
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
